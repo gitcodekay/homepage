@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px 50px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .decorative-element {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+        }
+
+        .decorative-element::before {
+            content: '⌂';
+            font-size: 40px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #4a5568;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .message {
+            font-size: 1em;
+            color: #718096;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #10b981 0%, #047857 100%);
+            margin: 30px auto;
+            border-radius: 2px;
+        }
+
+        .footer-text {
+            font-size: 0.9em;
+            color: #a0aec0;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 30px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="decorative-element"></div>
+        
+        <h1>Welcome</h1>
+        
+        <p class="subtitle">A Private Family Space</p>
+        
+        <div class="divider"></div>
+        
+        <p class="message">
+            This is a collection of personal pages maintained by individual family members.
+        </p>
+        
+        <p class="message">
+            Each page reflects its author's unique voice, interests, and stories.
+        </p>
+        
+        <div class="divider"></div>
+        
+        <p class="footer-text">
+            Individual pages are accessible by their respective paths.
+        </p>
+    </div>
+</body>
+</html>
